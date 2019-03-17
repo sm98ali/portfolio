@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- declares to browser that HTML will be written here -->
+<html>
+
+<head>
+	<!-- this is where meta data is stored -->
+	<meta name="viewport" content="width=device-width, initial scale=1.0"> <!-- adding viewport -->
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<title>Demo Website</title><!-- this is whats shows at the top of browser  -->
+</head>
+
+<body>
+
+	<div class="hero-image">
+		<div class="hero-text">
+			<h1 style="font-size:50px">SYED M. ALI</h1>
+			<p2>Graphic Communications Specialist</p2>
+		</div>
+	</div>
+
+	<div class="topnav">
+		<nav>
+			<!-- add nav bar -->
+
+			<a href="index.html">Home</a>
+			<a class="active" href="secondpage.html">Projects</a>
+			<a href="thirdpage.html">Hobbies</a>
+			<a href="https://www.linkedin.com/in/syed-ali-835b91171/" target="_blank">LinkedIn</a>
+
+		</nav>
+	</div>
+
+	<h2>My Projects</h2>
+	<p></p>
+
+
+	<table>
+		<tr>
+			<th>Featured Work</th>
+			<th>Skills Required</th>
+		</tr>
+
+		<tr>
+			<td>GVIC Promotion Material</td>
+			<td>Illustrator, Photoshop, InDesign</td>
+		</tr>
+
+		<tr>
+			<td>Personal Demo Website</td>
+			<td>HTML, CSS, JavaScript</td>
+		</tr>
+	</table>
+
+
+
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+		<!-- Full-width images with number and caption text -->
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 2</div>
+			<img src="images/gvic.png" style="width:100%">
+			<div class="text">Promotion material for the Geroge Vari Innovation Conference for print and web purposes</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 2</div>
+			<img src="images/website.png" style="width:100%">
+			<div class="text">Personal website development using HTML, CSS, and JavaScript</div>
+		</div>
+
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+	</div>
+
+
+	<script type="text/javascript">
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = slides.length
+			}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+		}
+	</script>>
+
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>
+
+
+</body>
+
+</html>
