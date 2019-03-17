@@ -289,45 +289,41 @@ tr:nth-child(even) {
   height: auto;
   /*center the image*/
   margin-bottom: 20px;
+  border-radius: 50%;
 }
 
 .overlay {
   position: absolute;
+  top: 0;
   bottom: 0;
-  background: rgb(0, 0, 0);
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
   background: rgba(0, 0, 0, 0.5);
   /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity: 0;
-  color: white;
-  font-size: 14px;
-  padding: 18px;
-  text-align: center;
-  font-family: Century Gothic, serif;
+  border-radius: 50%;
 }
 
 .container:hover .overlay {
   opacity: 1;
 }
 
-#subscribe {
-  text-decoration: none;
-  padding: 8px 16px;
-  margin: 50px auto;
-  background-color: #23003f;
+.text2 {
   color: white;
-}
-
-#subscribe:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.content {
+  font-size: 15px;
+  font-family: Century Gothic, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
+
 
 #myBtn {
   display: none;
