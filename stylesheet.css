@@ -12,9 +12,8 @@ html {
   /*dont forget semicolon*/
 }
 
-
 .hero-image {
-  background-image: url("images/HERO.jpg");
+  background-image: url("images/HERO2.jpg");
   height: 25%;
   width: 100%;
   background-position: center;
@@ -38,7 +37,7 @@ html {
 
 .topnav {
   width: 100%;
-  background-color: #23003f;
+  background-color: #458ccc;
   overflow: auto;
 }
 
@@ -56,13 +55,13 @@ html {
 }
 
 .topnav a:hover {
-  background-color: #23003f;
-  color: rgb(226, 15, 138);
+  background-color: #458ccc;
+  color: black;
 }
 
 .topnav a.active {
   background-color: whitesmoke;
-  color: #23003f;
+  color: #3973a5;
   font-family: Century Gothic, sans-serif;
   font-size: 17px;
 }
@@ -131,7 +130,7 @@ p2 {
   /*align text center*/
   margin-left: auto;
   margin-right: auto;
-  color: rgb(226, 15, 138);
+  color: whitesmoke;
   font-style: condensed;
   width: 80%;
   padding-bottom: 10px;
