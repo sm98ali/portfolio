@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 body,
@@ -32,7 +33,6 @@ html {
   transform: translate(-50%, -50%);
   color: black;
   width: 100%;
-
 }
 
 
@@ -55,6 +55,7 @@ html {
   font-family: Century Gothic, sans-serif;
 }
 
+
 .topnav a:hover {
   background-color: #458ccc;
   color: black;
@@ -65,6 +66,29 @@ html {
   color: #3973a5;
   font-family: Century Gothic, sans-serif;
   font-size: 17px;
+  animation: blinkingText 3s infinite;
+}
+
+@keyframes blinkingText {
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: black;
+  }
+
+  50% {
+    color: red;
+  }
+
+  75% {
+    color: black;
+  }
+
+  100% {
+    color: red;
+  }
 }
 
 
