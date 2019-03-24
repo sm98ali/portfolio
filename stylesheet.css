@@ -71,7 +71,7 @@ html {
 
 @keyframes blinkingText {
   0% {
-    color: red;
+    color: grey;
   }
 
   25% {
@@ -79,7 +79,7 @@ html {
   }
 
   50% {
-    color: red;
+    color: grey;
   }
 
   75% {
@@ -87,7 +87,7 @@ html {
   }
 
   100% {
-    color: red;
+    color: grey;
   }
 }
 
