@@ -85,10 +85,9 @@
 	<div class="topnav">
 		<nav>
 			<!-- add nav bar -->
-
-			<a class="active" href="index.html">Home</a><!-- links in the nav bar -->
-			<a href="secondpage.html">Projects</a><!-- this is how you link your own pages -->
-			<a href="thirdpage.html">Hobbies</a>
+			<a href="#Skills and Experience">Skills</a>
+			<a href="#My Projects">Projects</a>
+			<a href="#My Hobbies">Hobbies</a>
 			<a href="https://www.linkedin.com/in/syed98ali" target="_blank">LinkedIn</a>
 
 		</nav>
@@ -109,7 +108,6 @@
 			<img src="images/me.jpg" alt="Avatar" class="image">
 			<div class="overlay">
 				<div class="text2">
-					Age: 20 <br />
 					Phone: 647-574-4729 <br />
 					muhammed.ali@ryerson.ca
 				</div>
@@ -139,38 +137,241 @@
 			}
 		</script>
 
-		<p>I am a 3rd year student studying Graphic Communications Management at Ryerson University.</p>
+		<p>Welcome! I am a 3rd year student studying Graphic Communications Management at Ryerson University.</p>
 		<p>This is a personal site created to share my portfolio.</p>
 
-		<table>
-			<tr>
-				<th>Skills and Experience</th>
-			</tr>
 
-			<tr>
-				<td>Adobe Suite, Illustrator, InDesign, Photoshop</td>
-			</tr>
 
-			<tr>
-				<td>Microsoft Excel, CSV files for VDP, Data Conditioning</td>
-			</tr>
+		<a id="Skills and Experience">
+			<table>
+				<tr>
+					<th>Skills and Experience</th>
+				</tr>
 
-			<tr>
-				<td>Web Design, HTML, CSS, JavaScript (Basic)</td>
-			</tr>
+				<tr>
+					<td>Adobe Suite, Illustrator, InDesign, Photoshop</td>
+				</tr>
 
-			<tr>
-				<td>Digital Web Printing Experience</td>
-			</tr>
+				<tr>
+					<td>Microsoft Excel, CSV files for VDP, Data Conditioning</td>
+				</tr>
 
-			<tr>
-				<td>Communication and Team building skills</td>
-			</tr>
+				<tr>
+					<td>Web Design, HTML, CSS, JavaScript (Basic)</td>
+				</tr>
 
-			<tr>
-				<td>3D Printing (Basic)</td>
-			</tr>
+				<tr>
+					<td>Digital Web Printing Experience</td>
+				</tr>
+
+				<tr>
+					<td>Communication and Team building skills</td>
+				</tr>
+
+				<tr>
+					<td>3D Printing (Basic)</td>
+				</tr>
+			</table>
+		</a>
+
+
+
+
+
+
+
+
+		<a id="My Projects">
+			<table>
+				<col width="50%">
+				<tr>
+					<th>Work</th>
+					<th>Skills and Resources</th>
+				</tr>
+
+				<tr>
+					<td>GVIC Promotion Material</td>
+					<td>Illustrator, Photoshop, InDesign</td>
+				</tr>
+
+				<tr>
+					<td>GCM Awards Night booklet cover</td>
+					<td>Illustrator, Printed by Konica Minolta</td>
+				</tr>
+
+				<tr>
+					<td>Floor, T-shirt Graphics</td>
+					<td>Illustrator, Roland XR 640</td>
+				</tr>
+
+				<tr>
+					<td>Package Prototype</td>
+					<td>Illustrator, Roland XR 640, Kongsberg Table</td>
+				</tr>
+
+				<tr>
+					<td>Personal Website</td>
+					<td>HTML, CSS, JavaScript</td>
+				</tr>
+
+			</table>
+		</a>
+
+
+
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 8</div>
+				<img src="images/gvic.png" style="width:100%">
+				<div class="text">Promotion material for the Geroge Vari Innovation Conference for print and web
+					purposes
+				</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 8</div>
+				<img src="images/awards.png" style="width:100%">
+				<div class="text">Print Embelishment Project, Gold Foil, Varnish</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 8</div>
+				<img src="images/floorgraphic.png" style="width:100%">
+				<div class="text">Designs printed/cut on Roland</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 8</div>
+				<img src="images/floorgraphic2.png" style="width:100%">
+				<div class="text">Designs printed/cut on Roland</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">5 / 8</div>
+				<img src="images/kobeshirt.jpg" style="width:100%">
+				<div class="text">Designs printed/cut on Roland and Heat-Pressed</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">6 / 8</div>
+				<img src="images/prototype.jpg" style="width:100%">
+				<div class="text">Designed and prototyped new package for toothbrushes</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">7 / 8</div>
+				<img src="images/website.png" style="width:100%">
+				<div class="text">Personal Portfolio site (HTML, CSS, JavaScript)</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">8 / 8</div>
+				<img src="images/mamba2.png" style="width:100%">
+				<div class="text">Personal Wallpaper Art</div>
+			</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+
+		<script type="text/javascript">
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = slides.length
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " active";
+			}
+		</script>>
+
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<script>
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function () {
+				scrollFunction()
+			};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					document.getElementById("myBtn").style.display = "block";
+				} else {
+					document.getElementById("myBtn").style.display = "none";
+				}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0; // For Safari
+				document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			}
+		</script>
+
+
+
+
+
+
+
+
+
+
+
+		<a id="My Hobbies">
+			<table>
+		</a>
+		<tr>
+			<th>Hobbies</th>
+		</tr>
+
+		<tr>
+			<td>Graphic Design</td>
+		</tr>
+
+		<tr>
+			<td>3D Printing</td>
+		</tr>
+
+		<tr>
+			<td>Photography</td>
+		</tr>
+
+		<tr>
+			<td>Personal Web Design</td>
+		</tr>
 		</table>
+
 
 </body>
 
