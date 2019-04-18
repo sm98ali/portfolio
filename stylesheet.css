@@ -10,21 +10,66 @@ html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: whitesmoke;
-  /*dont forget semicolon*/
+  background: rgb(36, 36, 36);
 }
 
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+
 .hero-image {
-  background-image: url("images/HERO2.jpg");
-  height: 25%;
+  height: 94%;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background: linear-gradient(-45deg, #459eec, #db00ac, #459eec, #db00ac);  
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 12s ease infinite;
+	-moz-animation: Gradient 12s ease infinite;
+	animation: Gradient 12s ease infinite;
+  
 }
 
-.hero-text {
+.hero-text { 
   text-align: center;
   font-family: Impact, sans-serif;
   position: absolute;
@@ -35,11 +80,11 @@ html {
   width: 100%;
 }
 
-
 .topnav {
   width: 100%;
-  background-color: #458ccc;
+  background-color: transparent; 
   overflow: auto;
+  position: sticky;
 }
 
 .topnav a {
@@ -47,7 +92,7 @@ html {
   width: 25%;
   color: whitesmoke;
   text-align: center;
-  padding: 8px 12px;
+  padding: 15px 15px;
   text-decoration: none;
   font-size: 14px;
   list-style-type: none;
@@ -69,6 +114,9 @@ html {
   font-size: 17px;
 }
 
+/*.content {
+  padding-top: 60px;
+}*/
 
 
 
@@ -80,7 +128,7 @@ p {
   /*align text center*/
   margin-left: auto;
   margin-right: auto;
-  color: black;
+  color: whitesmoke;
   font-style: condensed;
   width: 80%;
   padding-bottom: 10px;
@@ -261,3 +309,4 @@ tr:nth-child(even) {
   flex: 33.33%;
   padding: 5px;
 }
+
