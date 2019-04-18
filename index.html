@@ -10,7 +10,7 @@
 
 	<Script>
 		var TxtType = function (el, toRotate, period) {
-			this.toRotate = toRotate;
+			this.toRotate = toRotate;	
 			this.el = el;
 			this.loopNum = 0;
 			this.period = parseInt(period, 10) || 2000;
@@ -77,7 +77,9 @@
 	<div class="hero-image">
 		<div class="hero-text">
 			<h1 style="font-size:50px">SYED M. ALI</h1>
-			<p2>Graphic Communications Management</p2>
+			<p2 class="typewrite" data-period="2000" data-type='[ "Designer.", "Visionary.", "Team Player." ]'>
+				<span class="wrap"></span>
+			</p2>
 		</div>
 	</div>
 
@@ -85,9 +87,9 @@
 	<div class="topnav">
 		<nav>
 			<!-- add nav bar -->
-			<a href="#Skills and Experience">About</a>
+			<a href="#about">About</a>
+			<a href="#My Skills">Skills and Experience</a>
 			<a href="#My Projects">Projects</a>
-			<a href="#My Hobbies">Hobbies</a>
 			<a href="https://www.linkedin.com/in/syed98ali" target="_blank">LinkedIn</a>
 
 		</nav>
@@ -104,13 +106,9 @@
 
 
 	<div class="content">
-		<a id="Skills and Experience">
-		<h2>
-			<a href="" class="typewrite" data-period="2000" data-type='[ "Designer.", "Visionary.", "Team Player." ]'>
-				<span class="wrap"></span>
-			</a>
-		</h2>
-	</a>
+		<a id="about">
+		
+	
 
 
 		<div class="container">
@@ -122,7 +120,7 @@
 				</div>
 			</div>
 		</div>
-
+		</a>
 
 		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 		<script>
@@ -151,7 +149,7 @@
 
 
 
-		
+		<a id="My Skills">
 			<table>
 				<tr>
 					<th>Skills and Experience</th>
@@ -181,7 +179,7 @@
 					<td>3D Printing (Basic)</td>
 				</tr>
 			</table>
-		
+		</a>
 
 
 
@@ -286,29 +284,6 @@
 
 
 
-		<a id="My Hobbies">
-			<table>
-		</a>
-		<tr>
-			<th>Hobbies</th>
-		</tr>
-
-		<tr>
-			<td>Graphic Design</td>
-		</tr>
-
-		<tr>
-			<td>3D Printing</td>
-		</tr>
-
-		<tr>
-			<td>Photography</td>
-		</tr>
-
-		<tr>
-			<td>Personal Web Design</td>
-		</tr>
-		</table>
 
 
 		<script
