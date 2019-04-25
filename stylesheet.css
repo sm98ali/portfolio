@@ -290,7 +290,7 @@ tr:nth-child(even) {
   /* Make sure it does not overlap */
   border: none;
   outline: none;
-  background-color: #23003f;
+  background-color: #00a6d8;
   color: white;
   cursor: pointer;
   /* Add a mouse pointer on hover */
