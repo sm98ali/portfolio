@@ -308,32 +308,7 @@ tr:nth-child(even) {
   /* Add a dark-grey background on hover */
 }
 
-.row {
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
 
-}
-
-/* Create three equal columns that sits next to each other */
-.column {
-  flex: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
 
 
 
@@ -528,4 +503,48 @@ tr:nth-child(even) {
 }
 .bar.expert::before{
   width: calc(100% - 10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #25c1ff; 
+  max-width: 80%;
+  padding-bottom: 15px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  font-family: arial;
+}
+p3 {
+  font-family: Century Gothic, serif;
+  /*make h1 georgia if not use serif font*/
+  font-size: 12pt;
+  text-align: left;
+  /*align text center*/
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-style: condensed;
+  width: 80%;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: Century Gothic, sans-serif;
+  /*make h1 georgia if not use serif font*/
+  font-size: 20pt;
+  margin-top: 15px;
+  text-align: center;
+  /*align text center*/
+  color: black;
 }
