@@ -500,24 +500,7 @@ tr:nth-child(even) {
 }
 .bar.advanced::before{
   width: calc(80% - 10px);
-}
-.bar.expert::before{
-  width: calc(100% - 10px);
-}
-
-
-
-
-
-
-
-
-
-
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background: white; 
+}; 
   max-width: 80%;
   padding-bottom: 15px;
   margin: auto;
