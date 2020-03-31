@@ -517,7 +517,7 @@ tr:nth-child(even) {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background: #25c1ff; 
+  background: white; 
   max-width: 80%;
   padding-bottom: 15px;
   margin: auto;
